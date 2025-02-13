@@ -1,0 +1,42 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: yojablao <yojablao@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2025/02/12 15:28:49 by yojablao          #+#    #+#              #
+#    Updated: 2025/02/12 15:32:51 by yojablao         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME = brain
+
+CC = c++
+
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -g -fsanitize=address
+
+
+SRC = main.cpp 
+
+OBJ = $(SRC:.cpp=.o)
+
+RM = rm -f
+
+
+	
+all	:	$(NAME)
+
+%.o	:	%.cpp
+	$(CC) $(CFLAGS)  -c -o $@ $<
+
+$(NAME)	:	$(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+
+clean: 
+			$(RM) $(OBJ) 
+
+fclean:	clean
+			$(RM) $(NAME)
+
+re:	fclean all
