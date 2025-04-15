@@ -6,7 +6,7 @@
 /*   By: yojablao <yojablao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 15:48:08 by yojablao          #+#    #+#             */
-/*   Updated: 2025/02/13 17:44:40 by yojablao         ###   ########.fr       */
+/*   Updated: 2025/04/15 14:20:09 by yojablao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ public:
     Weapon(std::string type);
     const std::string getType();
     void setType(std::string n_type);
+    ~Weapon(){};
 };
 
 

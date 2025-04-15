@@ -6,7 +6,7 @@
 /*   By: yojablao <yojablao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 12:46:15 by yojablao          #+#    #+#             */
-/*   Updated: 2025/02/12 12:56:33 by yojablao         ###   ########.fr       */
+/*   Updated: 2025/04/14 23:11:07 by yojablao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ int main(void)
 {
     Zombie *zombies;
     zombies = zombieHorde(100,"youssef");
-    for (size_t i = 0; i < 100; i++)
+    for (size_t i = 0; i < 100; i++){
         zombies[i].announce();
+    }
     delete[] zombies;
 }

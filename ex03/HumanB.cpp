@@ -6,7 +6,7 @@
 /*   By: yojablao <yojablao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/13 16:50:31 by yojablao          #+#    #+#             */
-/*   Updated: 2025/02/13 18:07:50 by yojablao         ###   ########.fr       */
+/*   Updated: 2025/04/15 14:58:45 by yojablao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,14 @@
 
 
 HumanB::HumanB(std::string name)
-    :name(name),weapon(NULL){}
+    :name(name),weapon(NULL)
+    {
+            std::cout << "HumanA" << name << " created with" << std::endl;
+    }
+HumanB::~HumanB()
+{
+    std::cout << "HumanB " << name<< " destroyed"<<std::endl;
+}
 
 void HumanB::attack()
 {

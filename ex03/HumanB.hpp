@@ -6,7 +6,7 @@
 /*   By: yojablao <yojablao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/13 15:51:38 by yojablao          #+#    #+#             */
-/*   Updated: 2025/02/13 18:04:29 by yojablao         ###   ########.fr       */
+/*   Updated: 2025/04/15 14:52:14 by yojablao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ public:
     HumanB(std::string name);
     void attack();
     void setWeapon(Weapon &weap);
+    ~HumanB();
 };
 
 

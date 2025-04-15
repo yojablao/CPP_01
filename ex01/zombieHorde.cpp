@@ -6,7 +6,7 @@
 /*   By: yojablao <yojablao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 14:26:28 by yojablao          #+#    #+#             */
-/*   Updated: 2025/02/12 12:52:25 by yojablao         ###   ########.fr       */
+/*   Updated: 2025/04/14 23:06:57 by yojablao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,13 @@ Zombie* zombieHorde( int N, std::string name )
     if(N <= 0)
         return(NULL);
     Zombie *zmb = new Zombie[N];
-    if(!zmb)
-    {
+    if(!zmb){
         std::cout<<"bad memory\n";
         return(NULL);    
     }
-    while (i < N)
-    {
-       zmb[i].seter(name);i++;
+    while (i < N){
+        zmb[i].seter(name);
+        i++;
     }
     return zmb;
 }

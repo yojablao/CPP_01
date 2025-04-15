@@ -6,7 +6,7 @@
 /*   By: yojablao <yojablao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 13:40:07 by yojablao          #+#    #+#             */
-/*   Updated: 2025/02/11 13:56:57 by yojablao         ###   ########.fr       */
+/*   Updated: 2025/04/14 19:03:07 by yojablao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ class Zombie
 private:
     std::string name;
 public:
+    Zombie(std::string name);
     void announce( void );
-    void seter(std::string name);  
+    ~Zombie();
 };
 Zombie* newZombie( std::string name );
 void randomChump( std::string name );
 
 #endif
-

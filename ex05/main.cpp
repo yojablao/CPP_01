@@ -6,7 +6,7 @@
 /*   By: yojablao <yojablao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 10:34:33 by yojablao          #+#    #+#             */
-/*   Updated: 2025/04/13 15:07:18 by yojablao         ###   ########.fr       */
+/*   Updated: 2025/04/15 14:22:17 by yojablao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,36 +15,6 @@
 int main() {
     Harl harl;
 
-    std::cout << "---- DEBUG ----" << std::endl;
-    harl.complain("debug");
-    std::cout << "---- DEBUG ----" << std::endl;
-    harl.complain("debug");
-    std::cout << "---- DEBUG ----" << std::endl;
-    harl.complain("debug");
-    std::cout << "---- DEBUG ----" << std::endl;
-    harl.complain("debug");
-    std::cout << "---- DEBUG ----" << std::endl;
-    harl.complain("debug");
-    std::cout << "---- DEBUG ----" << std::endl;
-    harl.complain("debug");
-    std::cout << "---- DEBUG ----" << std::endl;
-    harl.complain("debug");
-    std::cout << "---- DEBUG ----" << std::endl;
-    harl.complain("debug");
-    std::cout << "---- DEBUG ----" << std::endl;
-    harl.complain("debug");
-    std::cout << "---- DEBUG ----" << std::endl;
-    harl.complain("debug");
-    std::cout << "---- DEBUG ----" << std::endl;
-    harl.complain("debug");
-    std::cout << "---- DEBUG ----" << std::endl;
-    harl.complain("debug");
-    std::cout << "---- DEBUG ----" << std::endl;
-    harl.complain("debug");
-    std::cout << "---- DEBUG ----" << std::endl;
-    harl.complain("debug");
-    std::cout << "---- DEBUG ----" << std::endl;
-    harl.complain("debug");
     std::cout << "---- DEBUG ----" << std::endl;
     harl.complain("debug");
 
